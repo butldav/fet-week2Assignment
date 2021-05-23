@@ -1,0 +1,148 @@
+/* fonts */
+
+@font-face {
+    font-family: weezerfont;
+    src: url(fonts/weezerfont.ttf);
+  }
+
+@font-face {
+    font-family: iknowaghost;
+    src: url(fonts/iknowaghost.ttf);
+}
+/* body and content styles */
+body {
+    font-family: 'Roboto';
+    font-size: 14px;
+    color: black;
+    background-color: #07a3da;
+    width: 700px;
+    margin: 0 auto;
+}
+div#content {
+    margin: 20px 30px;
+    width: 640px;
+    /* border: 1px solid black; */
+}
+div#subcontent {
+    background: rgb(7,163,218, 0.5);
+    padding: 10px;
+    margin: 10px;
+    border: 1px dotted black;
+}
+div.youtube {
+    display: block;
+    margin: 0 auto;
+}
+/* heading styles */
+h1, h2, h3 {
+    text-align: center;
+    font-family: iknowaghost;
+}
+h1 {
+    font-size: 48px;
+}
+h2 { 
+    font-size: 40px;
+}
+h3 {
+    font-size: 32px;
+}
+h1 span.logo {
+    font-family: weezerfont;
+    text-transform: lowercase;
+}
+
+/* table styles */
+table {
+    width: 100%;
+}
+
+thead, fieldset, div#subcontent { 
+    box-shadow: 0 1px 4px #1e6fa8;
+}
+
+tbody:before {
+    content:"@";
+    display:block;
+    line-height:10px;
+    text-indent:-99999px;
+}
+
+tbody {
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgb(30,111,168, 0.3);
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgb(128, 212, 238, 0.3);
+
+}
+
+table img {
+    margin: 0 auto;
+    display:block;
+    border: 1px solid #80d4ee;
+}
+td:first-child {
+    background: #07a3da;
+}
+th, fieldset {
+    border: 1px dotted #80d4ee;
+}
+tr{
+    border-bottom: 1px dotted black;
+}
+/* menu style */
+#mainmenu {
+    text-align: center;
+}
+
+/* anchor styles */
+a { 
+    color:#80d4ee;
+}
+
+a:hover { 
+    color: #a24c53;
+}
+
+#mainmenu a {
+    font-family: weezerfont;
+    font-size: 32px;
+}
+/* form styles */
+
+label, input, textarea {
+    width: 99%;
+    height: 25px;
+}
+label {
+    font-family: weezerfont;
+    font-size: 24px;
+}
+input, textarea {
+    outline: none;
+    background-color: #80d4ee;
+    border: 1px solid #669cc0;
+    border-radius: 4px;
+}
+textarea {
+    outline: none;
+    resize: none;
+    height: auto;
+}
+input[type=submit] {
+    font-family: weezerfont;
+    font-size: 28px;
+    background-color: #1e6fa8;
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #669cc0;
+}
